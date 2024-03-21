@@ -1,3 +1,6 @@
+//MAIN ENTRY POINT, ANY ELEMENTS/CHANGES YOU DO HERE ARE TRANSLATED TO EVERY PAGE (ANY CHILDERN YOU ADD HERE WILL DISPLAY ON EVERY PAGE)
+// you can also change meta tags, lang, nav bars, footers (anything that you want to display on all pages)
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 

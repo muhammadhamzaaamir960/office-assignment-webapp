@@ -1,3 +1,6 @@
+//HOME PAGE ROUTE localhost:3000
+
+
 import Image from "next/image";
 
 export default function Home() {
