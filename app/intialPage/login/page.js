@@ -1,3 +1,6 @@
+export const metadata = {
+  title : "Login Page",
+  };
 const Login = () => {
     return (
       <div className="flex items-center justify-center min-h-screen bg-gray-100 relative overflow-hidden">
@@ -29,7 +32,7 @@ const Login = () => {
               </div>
               <div className="flex items-baseline justify-between">
                 <button className="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">Login</button>
-                <a href="#" className="text-sm text-blue-600 hover:underline">Forgot password?</a>
+                <a href=" #" className="text-sm text-blue-600 hover:underline">Forgot password?</a>
               </div>
             </div>
           </form>
