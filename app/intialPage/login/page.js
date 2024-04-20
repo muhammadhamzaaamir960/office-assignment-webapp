@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LoginNotification from '../components/LoginNotification';
+import LoginNotification from '../notif_components/LoginNotification';
 import axios from 'axios'; // this is for making http reqs
 
 const Login = () => {
