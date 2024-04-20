@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Notification.module.css';
+import styles from './LoginNotification.module.css';
 
-const Notification = ({ message, type }) => {
+const LoginNotification = ({ message, type }) => {
   return (
     <div className={`${styles.notification} ${type === 'success' ? styles.success : styles.failure}`}>
       {message}
@@ -9,4 +9,4 @@ const Notification = ({ message, type }) => {
   );
 };
 
-export default Notification;
+export default LoginNotification;
