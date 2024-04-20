@@ -1,4 +1,3 @@
-// pages/page.js (Login component)
 import React, { useState } from 'react';
 import LoginNotification from '../components/LoginNotification';
 import axios from 'axios'; // this is for making http reqs
