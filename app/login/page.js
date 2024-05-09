@@ -6,7 +6,7 @@ import AuthService from '../utils/AuthService';
 //FIX THE ROUTER THINGY IM LOSING MY SANITY, ORIGINALLY IT WAS LIKE THIS 
 //const router = useRouter();
 //but the code wont run if I dont NULL it so pls someone look into it ty <3
-//GIT TEST
+//GIT TEST1
 
 const Login = () => {
   const [router, setRouter] = useState(null);
