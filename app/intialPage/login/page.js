@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import LoginNotification from '../notif_components/LoginNotification';
-import axios from 'axios'; // this is for making http reqs
+// import LoginNotification from '../notif_components/LoginNotification';
+import axios from 'axios';
 
 const Login = () => {
   const [notification, setNotification] = useState(null);
   const [formData, setFormData] = useState({
     username: '',
-    email: '', // Assuming we want to keep the email field.
+    email: '', 
     password: '',
   });
 
@@ -16,16 +16,16 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      // The endpoint and payload might need adjustment to include email if necessary.
+
       const response = await axios.post('/api/user/login', {
         username: formData.username,
         password: formData.password,
-        // email: formData.email, // Uncomment if the backend requires the email field.
+
       });
 
       if (response.status === 200) {
         setNotification({ message: 'Login successful!', type: 'success' });
-        // Add your routing logic here
+
       }
     } catch (error) {
       console.error('Login failed:', error);

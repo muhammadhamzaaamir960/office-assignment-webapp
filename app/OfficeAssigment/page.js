@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
+import Link from 'next/link'; // Import Link for declarative navigation
 import SideNavbar from '../components/SideNavbar';
 import Header from '../components/Header';
 import Logo from '../components/Logo';
@@ -25,63 +27,68 @@ const OfficeAssignmentPage = () => {
     };
 
     return (
-        <div className="flex min-h-screen bg-gray-100">
-            <SideNavbar />
-            <div className="flex-1 flex flex-col">
-                <Header />
-                <Logo />
-                <div className="flex justify-center p-8">
-                    <div className="bg-white shadow-lg rounded-lg p-6 w-2/3">
-                        <h1 className="text-2xl font-bold mb-4">New Request</h1>
-                        <div className="mb-4">
-                            <input type="text" placeholder="Assignee" value={assignee} onChange={(e) => setAssignee(e.target.value)}
-                            className="border p-2 w-full"/>
-                        </div>
-                        <div className="mb-4">
-                            <select value={status} onChange={(e) => setStatus(e.target.value)}
-                            className="border p-2 w-full">
-                                <option value="Not Started">Not Started</option>
-                                <option value="In Progress">In Progress</option>
-                                <option value="Completed">Completed</option>
-                            </select>
-                        </div>
-                        <div className="mb-4">
-                            <select value={department} onChange={(e) => setDepartment(e.target.value)}
-                            className="border p-2 w-full">
-                                <option disabled value="">Choose Department...</option>
-                                <option value="HR">All Faculty</option>
-                                <option value="Tech">Industrial Engineering</option>
-                                <option value="Marketing">Software Engineering</option>
-                                <option value="Tech">Computer Engineering</option>
-                                <option value="Marketing">Artifical Intelligence Engineering</option>
-                                <option value="Tech">Energy Systems Engineering</option>
-                                <option value="Marketing">Biomedical Engineering</option>
-                            </select>
-                        </div>
-                        <div className="mb-4">
-                            <select value={priority} onChange={(e) => setPriority(e.target.value)}
-                            className="border p-2 w-full">
-                                <option value="Low Priority">Low Priority</option>
-                                <option value="Medium Priority">Medium Priority</option>
-                                <option value="High Priority">High Priority</option>
-                            </select>
-                        </div>
-                        <div className="mb-4">
-                            <textarea placeholder="Description" value={description} onChange={(e) => setDescription(e.target.value)}
-                            className="border p-2 w-full h-32"></textarea>
-                        </div>
-                        <button onClick={handleAddAssignment} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                            Submit
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
+      <div className="flex min-h-screen bg-gray-100">
+          <SideNavbar />
+          <div className="flex-1 flex flex-col">
+              <Header />
+              <Logo />
+              <div className="flex justify-center p-8">
+                  <div className="bg-white shadow-lg rounded-lg p-6 w-2/3">
+                      <h1 className="text-2xl font-bold mb-4">New Request</h1>
+                      <div className="mb-4">
+                          <input type="text" placeholder="Assignee" value={assignee} onChange={(e) => setAssignee(e.target.value)}
+                          className="border p-2 w-full"/>
+                      </div>
+                      <div className="mb-4">
+                          <select value={status} onChange={(e) => setStatus(e.target.value)}
+                          className="border p-2 w-full">
+                              <option value="Not Started">Not Started</option>
+                              <option value="In Progress">In Progress</option>
+                              <option value="Completed">Completed</option>
+                          </select>
+                      </div>
+                      <div className="mb-4">
+                          <select value={department} onChange={(e) => setDepartment(e.target.value)}
+                          className="border p-2 w-full">
+                              <option disabled value="">Choose Department...</option>
+                              <option value="HR">All Faculty</option>
+                              <option value="Tech">Industrial Engineering</option>
+                              <option value="Marketing">Software Engineering</option>
+                              <option value="Tech">Computer Engineering</option>
+                              <option value="Marketing">Artifical Intelligence Engineering</option>
+                              <option value="Tech">Energy Systems Engineering</option>
+                              <option value="Marketing">Biomedical Engineering</option>
+                          </select>
+                      </div>
+                      <div className="mb-4">
+                          <select value={priority} onChange={(e) => setPriority(e.target.value)}
+                          className="border p-2 w-full">
+                              <option value="Low Priority">Low Priority</option>
+                              <option value="Medium Priority">Medium Priority</option>
+                              <option value="High Priority">High Priority</option>
+                          </select>
+                      </div>
+                      <div className="mb-4">
+                          <textarea placeholder="Description" value={description} onChange={(e) => setDescription(e.target.value)}
+                          className="border p-2 w-full h-32"></textarea>
+                      </div>
+                      <button onClick={handleAddAssignment} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                          Submit
+                      </button>
+                  </div>
+              </div>
+              <Link href="/assigendOffices" className="text-lg text-blue-700 hover:underline">
+              View Assigned Offices
+
+              </Link>
+          </div>
+          <div>
+          </div>
+      </div>
+  );
 };
 
 export default OfficeAssignmentPage;
-
 
 /* 
 "use client";
