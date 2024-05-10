@@ -37,7 +37,9 @@ model Office {
   capacity        Int
   currentOccupancy Int
   departmentId    String?
-
+  location           String?
+  floor              Int            @default(1)
+  distanceFromNearest Int?
   Department      Department?       @relation(fields: [departmentId], references: [id], name: "DepartmentOffices")
 
   @@map("offices")

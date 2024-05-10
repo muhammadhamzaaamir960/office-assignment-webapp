@@ -1,0 +1,40 @@
+
+Computer Engineering:
+
+Role:Assoc. Prof. (Department Chair) Name:Tevfik AYTEKIN
+Role:Assist Prof. Name:Tarkan AYDIN
+Role:Assoc. Prof. Name:Cemal Okan ŞAKAR
+Role:Assist Prof. Name:Ece Gelal SOYAK
+Role:Assist Prof. Name:Erkut ARICAN
+Role:Assist Prof. Name:Günet EROĞLU
+Role:Assist Prof. (Part Time) Name:Ömer Melih GÜL
+Role:Assist Prof. Name:Selin NACAKLI
+Role:Ph.D  Name:Merve AYYÜCE KIZRAK
+Role:Ph.D  Name:Hassan İMANİ
+
+Software Engineering:
+
+Role:Assoc. Prof. (Department Chair) Name:Ayla GÜLCÜ
+Role:Assoc. Prof. Name:Yücel Batu SALMAN
+Role:Assoc. Prof. Name:Pınar BÖLÜK
+Role:Assist Prof. Name:Ahmet Naci ÜNAL
+Role:Assist Prof. Name:Betül ERDOĞDU ŞAKAR
+Role:Assist Prof. Name:Derya BODUR
+Role:Assist Prof. Name:Özge YÜCEL KASAP
+Role:Assist Prof. Name:Tamer UÇAR
+Role:Assist Prof. Name:İsmail DURU
+Role:Assist Prof. Name:Duygu ÇAKIR YENİDOĞAN
+Role:Teaching Assist. Name:Merve ARITÜRK
+Role:Teaching Assist. Name:Simge AKAY
+Role:Arş. Gör. Name:Marwa Issam Abdulkareem ABDULKAREEM
+
+
+Industrial Engineering:
+Role:Prof. (Department Chair) Name:Tankut ATAN
+Role:Prof. Name:Gül Tekin TEMUR
+Role:Prof. Name:Mustafa ÖZBAYRAK
+Role:Prof. Name:Ahmet BEŞKESE
+Role:Assoc. Name:Prof. Oğuzhan ERDİNÇ
+Role:Assoc. Name:Prof. Adnan ÇORUM
+Role:Assist Prof. Name:Ayşe KAVUŞTURUCU
+Role:Assist Prof. Name:Elif Haktanır AKTAŞ
