@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import SideNavbar from '../components/SideNavbar';
 import Header from '../components/Header';
 import Logo from '../components/Logo';
+//Note: I added a sorting feature to the table, so you can sort the columns by clicking on the headers. -Rawan
 
 const AssignedOfficesPage = () => {
   const [staffMembers, setStaffMembers] = useState([]);
@@ -14,6 +15,7 @@ const AssignedOfficesPage = () => {
   const [selectedDepartment, setSelectedDepartment] = useState('');
 
   useEffect(() => {
+    //the file is in public folder btw, edit it there if yall wanna add new entries BUT PLEASE FOLLOW MY FORMAT! -Nour <3 :)
     fetch('/Departments-Mock-Data.txt')
       .then(response => response.text())
       .then(text => parseData(text))
@@ -26,6 +28,7 @@ const AssignedOfficesPage = () => {
     let currentDepartment = '';
 
     lines.forEach(line => {
+        //fragile code dont edit please. -Rawan
       if (line.includes('Role')) {
         const role = line.match(/Role:(.*?) Name:/)[1].trim();
         const name = line.match(/Name:(.*)/)[1].trim();
@@ -50,7 +53,7 @@ const AssignedOfficesPage = () => {
     return staffMembers.filter(person => person.department.includes(selectedDepartment));
   }, [staffMembers, selectedDepartment]);
 
-  const columns = useMemo(() => [
+  const columns = useMemo(() => [ //Tankut Hoca said we should add a distance column, but I don't have that data so I'm not adding it. -Nour
     { Header: 'Office Number', accessor: 'officeNumber' },
     { Header: 'Person Occupying', accessor: 'name' },
     { Header: 'Role', accessor: 'role' },
@@ -80,12 +83,17 @@ const AssignedOfficesPage = () => {
   };
 
   const exportToExcel = () => {
-    const ws = XLSX.utils.json_to_sheet(data);
-    const wb = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(wb, ws, "Assigned Offices");
-    XLSX.writeFile(wb, "assigned_offices.xlsx");
-    console.log("Export function called."); // Debug: Check if this function is called
-    toast.success(`File has been successfully exported: assigned_offices.xlsx`);
+    try {
+      const ws = XLSX.utils.json_to_sheet(data);
+      const wb = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(wb, ws, "Assigned Offices");
+      XLSX.writeFile(wb, "assigned_offices.xlsx");
+      console.log("Export function called."); // Debugging thingy to Check if this function is called -Kaan
+      toast.success(`File has been successfully exported: assigned_offices.xlsx`);
+    } catch (error) {
+      console.error("Export failed:", error); //I logged it here so its easier to see the error in the console -Kaan
+      toast.error(`Failed to export file: ${error.message}`); //and added a toast to show the error message to the user -Kaan
+    }
   };
 
   return (
@@ -122,7 +130,7 @@ const AssignedOfficesPage = () => {
                       <th {...column.getHeaderProps(column.getSortByToggleProps())} style={{ borderBottom: 'solid 3px blue', background: 'aliceblue', color: 'black', fontWeight: 'bold', padding: '10px', border: 'solid 1px gray' }}>
                         {column.render('Header')}
                         <span>
-                          {column.isSorted ? (column.isSortedDesc ? ' 🔽' : ' 🔼') : ''}
+                          {column.isSorted ? (column.isSortedDesc ? ' 🔽' : ' 🔼') : ''} 
                         </span>
                       </th>
                     ))}
