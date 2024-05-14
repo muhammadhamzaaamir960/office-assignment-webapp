@@ -8,6 +8,7 @@ import Logo from '../components/Logo';
 export const metadata = {
   title : "Main Page",
   };
+  
 const MainPage = () => {
   return (
     <div className="flex min-h-screen bg-gray-100">         

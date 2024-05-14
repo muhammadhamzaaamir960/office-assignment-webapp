@@ -1,6 +1,4 @@
-
 Computer Engineering:
-
 Role:Assoc. Prof. (Department Chair) Name:Tevfik AYTEKIN
 Role:Assist Prof. Name:Tarkan AYDIN
 Role:Assoc. Prof. Name:Cemal Okan ŞAKAR
@@ -13,7 +11,6 @@ Role:Ph.D  Name:Merve AYYÜCE KIZRAK
 Role:Ph.D  Name:Hassan İMANİ
 
 Software Engineering:
-
 Role:Assoc. Prof. (Department Chair) Name:Ayla GÜLCÜ
 Role:Assoc. Prof. Name:Yücel Batu SALMAN
 Role:Assoc. Prof. Name:Pınar BÖLÜK
@@ -38,3 +35,86 @@ Role:Assoc. Name:Prof. Oğuzhan ERDİNÇ
 Role:Assoc. Name:Prof. Adnan ÇORUM
 Role:Assist Prof. Name:Ayşe KAVUŞTURUCU
 Role:Assist Prof. Name:Elif Haktanır AKTAŞ
+
+Biomedical Engineering:
+Role:Assist Prof. (Department Chair)  Name:Hakan SOLMAZ
+Role:Assist. Prof. Name:Burcu TUNÇ ÇAMLIBEL
+Role:Assist Prof. Name:Bora BÜYÜKSARAÇ
+Role:Assist Prof. Name:Lavdie RADA
+Role:Assist Prof. Name:Canan BAĞCI
+Role:Teaching Assist. Name:Ali GÜZEL
+Role:Teaching Assist. Name:Baran ARAS
+Role:Assist Prof. Name:Engin BAYSOY
+
+
+Electrical and Electronics Engineering:
+Role:Prof. (Department Chair) Name:Şeref KALEM
+Role:Prof. Name:BÜLENT ULUG
+Role:Prof. Name:Recep DİMİTROV
+Role:Prof. Name:Saeid KARAMZADEH
+Role:Assist Prof. Name:Suzan ÜRETEN
+Role:Teaching Assist. Name:Mehmet Can ALPHAN
+Role:Teaching Assist. Name:Muhammed Cemal DEMİR
+Role:Teaching Assist. Name:Merve İlay ÇELİKKAYA
+Role:Teaching Assist. Name:Mehmet Ziya ERENOĞLU
+Role:Arş. Gör. Name:Duygu ÜÇÜNCÜ
+
+
+Energy Systems Engineering:
+Role:Assist Prof. (Department Chair) Name:Gürkan SOYKAN
+Role:Prof. Name:Suleyman Allakhverdiev
+Role:Assist Prof. Name:Nezihe YILDIRAN
+Role:Assist Prof. Name:Hüseyin Günhan ÖZCAN
+Role:Teaching Assist. Name:Selen YOLDAŞ
+
+Molecular Biology and Genetics:
+Role:Assist Prof. (Department Chair) Name:Cemalettin BEKPEN
+Role:Assist Prof. Name:Ömer Lütfi UYANIK
+Role:Assist Prof. Name:Elif EREN
+Role:Assist Prof. Name:Merve SEVEN
+Role:Prof. (Part Time) Name:Sezai TÜRKEL
+Role:Assist Prof. Name:Dilek ÇEVİK
+Role:Arş. Gör. Name:Hamza Bayhan
+Role:Arş. Gör Name:Fatma Özge ASLAN
+
+Civil Engineering:
+Role:Prof. (Department Chair) Name:Lütfi ARDA
+Role:Assist Prof. Name:Dilruba ÖZMEN
+Role:Assist Prof. Name:İrem ŞANAL
+Role:Assist Prof. Name:Mesut NEGİN
+Role:Assist Prof. Name:Gökhan GELİŞEN
+Role:Assist Prof. Name:İbrahim Ertuğrul YALÇIN
+Role:Teaching Assist. Name:Kübra DEĞERLİ
+Role:Assist Prof. Name:Ahmet Can MERT
+Role:Dr. (Part Time) Name:Anıl ÇELİK
+
+Management Engineering:
+Role:Assoc. Prof. (Department Chair) Name:Sait GÜL
+Role:Prof. Name:Tunç BOZBURA
+Role:Assoc. Prof. Name:Alper CAMCI
+Role:Assoc. Prof. Name:M. ASLI AYDIN
+Role:Assoc. Prof. Name:Çağlar SİVRİ
+Role:Assoc. Prof. Name:Selçuk TUZCUOĞLU
+Role:Teaching Assist. Name:Ozan Rıdvan AKSU
+Role:Assist Prof. Name:Cihangir GÜMÜŞTAŞ
+Role:Assist Prof. Name:Mehmet Emin YILDIZ
+Role:Arş. Gör. Name:Nur Asena Gün
+
+Mechatronics Engineering:
+Role:Assoc. Prof. (Department Chair) Name:Yalçın ÇEKİÇ
+Role:Prof. Name:Ozan AKDOĞAN
+Role:Prof. Name:Lütfi ARDA
+Role:Assist Prof. Name:Amir NAVIDFAR
+Role:Assist Prof. Name:M. Senem Seven
+Role:Dr. Öğr Üyesi Name:Beste BAHÇECİ
+Role:Dr. Öğr. Üyesi Name:Durul ULUTAN
+Role:Teaching Assist. Name:Sevgi CANPOLAT ATABAY
+
+
+Artificial Intelligence Engineering:
+Role:Assist Prof. (Department Chair) Name:Fatih KAHRAMAN
+Role:Prof. Name:Mehmet Raşit Eskicioğlu
+Role:Assist Prof. Name:Binnur KURT
+Role:Assist Prof. Name:Tamer UÇAR
+Role:Ph.D Name:Merve AYYÜCE KIZRAK
+Role:Assist Prof. Name:Mustafa Ümit ÖNER

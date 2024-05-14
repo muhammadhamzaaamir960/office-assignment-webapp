@@ -1,0 +1,13 @@
+{
+    "distances": {
+      "Employee1": {
+        "Office1": 10,
+        "Office2": 20
+      },
+      "Employee2": {
+        "Office1": 20,
+        "Office2": 10
+      }
+    }
+  }
+  
