@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
-// import LoginNotification from '../notif_components/LoginNotification';
-import axios from 'axios';
+"use client";
+import React, { useState } from "react";
+import LoginNotification from "@/app/notif_components/LoginNotification";
+import axios from "axios";
 
 const Login = () => {
   const [notification, setNotification] = useState(null);
   const [formData, setFormData] = useState({
-    username: '',
-    email: '', 
-    password: '',
+    username: "",
+    email: "",
+    password: "",
   });
 
   const handleChange = (e) => {
@@ -16,20 +17,21 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-
-      const response = await axios.post('/api/user/login', {
+      const response = await axios.post("/api/user/login", {
         username: formData.username,
         password: formData.password,
-
       });
 
       if (response.status === 200) {
-        setNotification({ message: 'Login successful!', type: 'success' });
-
+        setNotification({ message: "Login successful!", type: "success" });
       }
+      
     } catch (error) {
-      console.error('Login failed:', error);
-      setNotification({ message: 'Login failed. Please check your username and password.', type: 'failure' });
+      console.error("Login failed:", error);
+      setNotification({
+        message: "Login failed. Please check your username and password.",
+        type: "failure",
+      });
     }
   };
 
@@ -42,23 +44,56 @@ const Login = () => {
           <div className="mt-4">
             <div>
               <label htmlFor="username">Username:</label>
-              <input type="text" id="username" name="username" value={formData.username} onChange={handleChange} />
+              <input
+                type="text"
+                id="username"
+                name="username"
+                value={formData.username}
+                onChange={handleChange}
+              />
             </div>
             <div>
               <label htmlFor="email">Email:</label>
-              <input type="text" id="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600" />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
+              />
             </div>
             <div className="mt-4">
               <label htmlFor="password">Password:</label>
-              <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600" />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
+              />
             </div>
             <div className="flex items-baseline justify-between">
-              <button type="button" className="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900" onClick={handleLogin}>Login</button>
-              <a href="#" className="text-sm text-blue-600 hover:underline">Forgot password?</a>
+              <button
+                type="button"
+                className="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900"
+                onClick={handleLogin}
+              >
+                Login
+              </button>
+              <a href="#" className="text-sm text-blue-600 hover:underline">
+                Forgot password?
+              </a>
             </div>
           </div>
         </form>
-        {notification && <LoginNotification message={notification.message} type={notification.type} />}
+        {notification && (
+          <LoginNotification
+            message={notification.message}
+            type={notification.type}
+          />
+        )}
       </div>
     </div>
   );

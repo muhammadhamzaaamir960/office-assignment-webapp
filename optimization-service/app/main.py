@@ -5,7 +5,7 @@ import pandas as pd
 import gurobipy as gp
 from gurobipy import GRB
 
-app = FastAPI()
+app  = FastAPI()
 
 class OptimizationInput(BaseModel):
     preferences_path: str

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './LoginNotification.module.css';
+import styles from './Notification.module.css';
 
 const LoginNotification = ({ message, type }) => {
   return (
